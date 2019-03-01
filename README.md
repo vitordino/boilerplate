@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# boilerplate
 
-## Available Scripts
+> react with some ✨
 
-In the project directory, you can run:
+<br/><br/>
 
-### `npm start`
+## Development Quick Start
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> Make sure your system meets the [required dependencies and versions](#system-dependencies) before proceeding.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```bash
+# Install project dependencies
+$ yarn
 
-### `npm test`
+# Development server
+$ yarn dev # starts dev server
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Build app
+$ yarn build # Outputs to ./build directory
+$ npx serve build # Static server for the built website
+```
 
-### `npm run build`
+<br/><br/>
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Development Server Options**
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+To change the port set the **`PORT`** environment variable:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ PORT=9000 yarn dev
+# => starts server at http://localhost:9000
+```
 
-### `npm run eject`
+<br/><br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Packages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| name | license | description |
+| :-- | :-: | :-- |
+| [`react`](https://reactjs.org/) | [`MIT`](https://api.github.com/repos/facebook/react/license) | Declarative, component-based, functional aproach to user interfaces |
+| [`create-react-app` `v2`](https://github.com/facebook/create-react-app) | [`MIT`](https://api.github.com/repos/facebook/create-react-app/license) | create `react` apps with no build configuration. |
+| [`rescripts`](https://github.com/harrysolovay/rescripts) | [`MIT`](https://api.github.com/repos/harrysolovay/rescripts/license) | Use the latest react-scripts with custom configurations for Babel, ESLint, TSLint, Webpack,... ∞ |
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<br/><br/>
 
-## Learn More
+#### System Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+| name   | min. version |
+| :----- | -----------: |
+| `git`  |      `2.0.0` |
+| `bash` |      `3.0.0` |
+| `node` |      `8.0.0` |
+| `yarn` |      `1.0.0` |
